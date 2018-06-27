@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node stoic-bot.py"
   },
   "dependencies": {
     "discord.js": "11.1.0",
+    "discord.py": "0.16.6",
     "request": "2.81.0"
   }
 }
