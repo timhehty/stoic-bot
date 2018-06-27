@@ -1,1 +1,1 @@
-worker: node stoic-bot.py
+worker: python stoic-bot.py
