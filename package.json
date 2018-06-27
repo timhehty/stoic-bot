@@ -2,7 +2,7 @@
   "name": "Test",
   "description": "Test",
   "version": "0.0.0",
-  "main": "bot.js",
+  "main": "stoic-bot.py",
   "scripts": {
     "start": "node stoic-bot.py"
   },
