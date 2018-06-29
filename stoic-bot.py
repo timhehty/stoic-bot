@@ -84,13 +84,13 @@ async def weather():
         tempC = ((tempF) - 32) * (5/9)
         tempC = int(tempC)
         if tempC >= 20:
-            appropClothes = ". You're good to go outside with just a T-shirt and shorts."
+            appropClothes = ". You're good to go outside with just a T-shirt and shorts. :sun_with_face: "
         if tempC <= 19 and tempC >= 11:
-            appropClothes = ". You should probably wear a light jacket and/or sweater."
+            appropClothes = ". You should probably wear a light jacket and/or sweater. :white_sun_small_cloud: "
         if tempC <= 10 and tempC >= 0:
-            appropClothes = ". A heavier jacket or coat is a good idea."
+            appropClothes = ". A heavier jacket or coat is a good idea. :cloud:"
         if tempC <= 0:
-            appropClothes = ". Please wear a heavy winter jacket or coat."
+            appropClothes = ". Please wear a heavy winter jacket or coat. :cloud_snow:"
         tempC = str(tempC)
         await client.say("The current temperature is " + tempC + "°C" + appropClothes)
 
