@@ -10,6 +10,11 @@ BOT_PREFIX = ("?", "!")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
+with open("config/config.json") as cfg:
+config = json.load(cfg)
+
+token = config["token"]
+
 @client.command(name='quote',
                 description="Gives a Stoic quote",
                 brief="thank u marcus",
@@ -103,4 +108,4 @@ async def list_servers():
         await asyncio.sleep(600)
 
 client.loop.create_task(list_servers())
-client.run(os.environ['BOT_TOKEN'])
+client.run(token)
