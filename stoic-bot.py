@@ -11,7 +11,7 @@ BOT_PREFIX = ("?", "!")
 client = Bot(command_prefix=BOT_PREFIX)
 
 with open("config/config.json") as cfg:
-config = json.load(cfg)
+    config = json.load(cfg)
 
 token = config["token"]
 
