@@ -4,9 +4,9 @@ import aiohttp
 import json
 from discord import Game
 from discord.ext.commands import Bot
+import os
 
 BOT_PREFIX = ("?", "!")
-TOKEN = "NDYwNjU4MTUxMjA1ODk2MjAy.DhM_vw.KeF37s2pvQbGHzqCHxPUf_lOOr8"
 
 client = Bot(command_prefix=BOT_PREFIX)
 
@@ -103,4 +103,4 @@ async def list_servers():
         await asyncio.sleep(600)
 
 client.loop.create_task(list_servers())
-client.run(TOKEN)
+client.run(os.environ['BOT_TOKEN'])
